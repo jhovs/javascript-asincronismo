@@ -15,10 +15,19 @@ function fetchData(url, callback){
             if (xhttp.status === 200){
                 callback(null, JSON.parse(xhttp.responseText)) 
             }else{ 
-                const error = new Error('Error' + url_api)
+                const error = new Error('Error' + url_api);
                 return callback(error, null)
             }
         }
     }
     xhttp.send();
 };
+
+/*  
+## RETO ## 
+a.	Petición la API 
+b.	Obtener cuántos personajes hay en total.
+c.	Obtener el primer personaje y saber a qué ubicación se encuentra para saber la dimensión pertenece. 
+ */
+
+
