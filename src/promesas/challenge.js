@@ -15,7 +15,7 @@ c.	Obtener el primer personaje y saber a qué ubicación se encuentra para saber
 fetchData(API)
     .then(data => {
         console.log(data.info.count);
-        return fetchData(`${API} ${data.results[1].id}`);
+        return fetchData(`${API} ${data.results[0].id}`);
     })
     .then(data =>{
         console.log(`${data.name} - ${data.status}`  );
